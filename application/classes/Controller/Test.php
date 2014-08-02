@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Test extends Controller {
+class Controller_Test extends Controller_Template{
 
     public function action_index()
     {
@@ -14,12 +14,15 @@ class Controller_Test extends Controller {
     }
 
     public function action_monitor(){
-
-        $data['title'] = "监控页面";
-        $data['content'] = "test";
-        $view = $this->load->view('monitorView', $data);
-
-        $view->render(TRUE);
+        $view = View::factory('zadmin/monitor');
+        $this->response->body($view);
     }
+
+    public function action_view()
+    {
+        $view = View::factory('testView');
+        $this->response->body($view);
+    }
+
 
 } // End Welcome
