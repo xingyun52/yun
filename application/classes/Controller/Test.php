@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Test extends Controller_Template{
+class Controller_Test extends Controller{
 
     public function action_index()
     {
@@ -20,7 +20,7 @@ class Controller_Test extends Controller_Template{
 
     public function action_view()
     {
-        $view = View::factory('testView');
+        $view = View::factory('test/testView1');
         $this->response->body($view);
     }
 
