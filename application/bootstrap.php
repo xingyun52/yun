@@ -140,9 +140,3 @@ Route::set('default', '(<controller>(/<action>(/<id>)))')
 		'controller' => 'welcome',
 		'action'     => 'index',
 	));
-
-Route::set('zadmin', '(<controller>(/<action>(/<id>)))')
-    ->defaults(array(
-        'controller' => 'zadmin_test',
-        'action'     => 'hello',
-    ));

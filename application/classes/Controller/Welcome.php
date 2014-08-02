@@ -4,8 +4,7 @@ class Controller_Welcome extends Controller {
 
 	public function action_index()
 	{
-        $time = date('Y-m-d H:i:s');
-		$this->response->body("hello, world!!!$time");
+		$this->response->body('hello, world!');
 	}
 
 } // End Welcome
