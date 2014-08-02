@@ -22,7 +22,7 @@ else
  * @link http://kohanaframework.org/guide/using.configuration
  * @link http://www.php.net/manual/timezones
  */
-date_default_timezone_set('America/Chicago');
+date_default_timezone_set('Asia/Shanghai');
 
 /**
  * Set the default locale.
@@ -143,7 +143,7 @@ Route::set('name1', '(<controller>(/<action>(/<id>)))')
 
 Route::set('name2', '(<controller>(/<action>(/<id>)))')
     ->defaults(array(
-        'controller' => 'hello',
+        'controller' => 'test',
         'action'     => 'index',
     ));
 
