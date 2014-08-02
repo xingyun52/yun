@@ -8,7 +8,7 @@
  */
 class Controller_Zadmin_Test extends Controller {
 
-    public function action_hello()
+    public function action_index()
     {
         $this->response->body('hello, yun!');
     }
